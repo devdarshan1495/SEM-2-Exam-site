@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+    <main class="container page-container">
+        <div class="payment-page-layout">
+            <!-- Left Side: Payment Options -->
+            <div class="payment-options-container">
+                <h2>Choose a Payment Method</h2>
+                
+                <div class="payment-accordion">
+                    <!-- UPI Option -->
+                    <div class="accordion-item is-open">
+                        <h3 class="accordion-header">
+                            <img src="https://img.icons8.com/color/48/bhim-upi.png" alt="UPI Icon"/>
+                            UPI
+                        </h3>
+                        <div class="accordion-content">
+                            <p>Pay with your favorite UPI app.</p>
+                            <div class="form-group">
+                                <label for="upi-id">Enter your UPI ID</label>
+                                <input type="text" id="upi-id" placeholder="yourname@bank">
+                            </div>
+                            <button class="btn btn-primary full-width">Verify & Pay</button>
+                        </div>
+                    </div>
+
+                    <!-- Credit/Debit Card Option -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <img src="https://img.icons8.com/fluency/48/bank-card-front-side.png" alt="Card Icon"/>
+                            Credit / Debit Card
+                        </h3>
+                        <div class="accordion-content">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                            </div>
+                            <div class="form-row-split">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry (MM/YY)</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="XXX">
+                                </div>
+                            </div>
+                             <button class="btn btn-primary full-width">Pay Now</button>
+                        </div>
+                    </div>
+                     <!-- Net Banking Option -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                           <img src="https://img.icons8.com/fluency/48/bank.png" alt="Bank Icon"/>
+                            Net Banking
+                        </h3>
+                        <div class="accordion-content">
+                            <p>Select your bank from the list below.</p>
+                            <div class="form-group">
+                                <select>
+                                    <option>HDFC Bank</option>
+                                    <option>ICICI Bank</option>
+                                    <option>State Bank of India</option>
+                                    <option>Axis Bank</option>
+                                    <option>Kotak Mahindra Bank</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary full-width">Proceed to Bank</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Order Summary -->
+            <div class="order-summary-container">
+                <div class="card">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Chandu Champion (2 Tickets)</span>
+                        <span>₹500.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Booking Fee</span>
+                        <span>₹50.00</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-total">
+                        <span>Total Amount</span>
+                        <span>₹550.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="#">Mobile Recharge</a></li>
+                        <li><a href="#">DTH Recharge</a></li>
+                        <li><a href="#">Electricity Bill</a></li>
+                        <li><a href="#">Credit Card Bill</a></li>
+                        <li><a href="#">Pay Loan EMI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Movie Tickets</a></li>
+                        <li><a href="#">Bus Tickets</a></li>
+                        <li><a href="#">Train Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Grievance Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

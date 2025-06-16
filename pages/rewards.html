@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="container page-container">
+        <!-- Hero Section -->
+        <section class="rewards-hero">
+            <div class="rewards-hero-content">
+                <h1>🎁 Rewards & Cashback</h1>
+                <p>Earn exciting rewards and cashback on every transaction</p>
+            </div>
+            <div class="rewards-hero-visual">
+                <div class="reward-coins">
+                    <div class="coin coin-1">💰</div>
+                    <div class="coin coin-2">🎯</div>
+                    <div class="coin coin-3">⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cashback Balance -->
+        <section class="cashback-overview">
+            <div class="cashback-stats">
+                <div class="stat-card primary">
+                    <div class="stat-icon">💸</div>
+                    <div class="stat-info">
+                        <h3>Total Cashback Won</h3>
+                        <span class="stat-value">₹ 1,250</span>
+                        <p class="stat-subtitle">+₹150 this month</p>
+                    </div>
+                </div>
+                <div class="stat-card secondary">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>Reward Points</h3>
+                        <span class="stat-value">2,850</span>
+                        <p class="stat-subtitle">Redeem for vouchers</p>
+                    </div>
+                </div>
+                <div class="stat-card accent">
+                    <div class="stat-icon">🎁</div>
+                    <div class="stat-info">
+                        <h3>Vouchers Unlocked</h3>
+                        <span class="stat-value">12</span>
+                        <p class="stat-subtitle">Ready to use</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Offers -->
+        <section class="featured-offers">
+            <div class="section-header">
+                <h2>🔥 Trending Offers</h2>
+                <p>Limited time deals you shouldn't miss</p>
+            </div>
+            <div class="offers-carousel">
+                <div class="featured-offer-card">
+                    <div class="offer-badge">HOT DEAL</div>
+                    <div class="offer-visual">
+                        <img src="https://img.icons8.com/fluency/96/food-and-wine.png" alt="Food">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Flat 50% OFF on Zomato</h3>
+                        <p>Get up to ₹100 off on your next 3 orders</p>
+                        <div class="offer-validity">⏰ Valid till midnight</div>
+                    </div>
+                    <button class="btn btn-gradient">Claim Now</button>
+                </div>
+                <div class="featured-offer-card">
+                    <div class="offer-badge">NEW</div>
+                    <div class="offer-visual">
+                        <img src="https://img.icons8.com/fluency/96/shopping-bag.png" alt="Shopping">
+                    </div>
+                    <div class="offer-content">
+                        <h3>₹500 OFF on Myntra</h3>
+                        <p>Valid on minimum purchase of ₹2499</p>
+                        <div class="offer-validity">⏰ 2 days left</div>
+                    </div>
+                    <button class="btn btn-gradient">Claim Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Vouchers Grid -->
+        <section class="vouchers-section">
+            <div class="section-header">
+                <h2>🎪 All Vouchers</h2>
+                <div class="voucher-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Food</button>
+                    <button class="filter-btn">Shopping</button>
+                    <button class="filter-btn">Entertainment</button>
+                    <button class="filter-btn">Travel</button>
+                </div>
+            </div>
+            
+            <div class="voucher-grid">
+                <div class="voucher-card food-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/food-and-wine.png" alt="Food">
+                        </div>
+                        <div class="voucher-brand">Zomato</div>
+                        <div class="voucher-discount">50% OFF</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>Flat 50% OFF on Zomato</h3>
+                        <p>Get up to ₹100 off on your next 3 orders. T&C Apply.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 150 Points</span>
+                            <span class="voucher-expiry">⏰ 30 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+
+                <div class="voucher-card shopping-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/shopping-bag.png" alt="Shopping">
+                        </div>
+                        <div class="voucher-brand">Myntra</div>
+                        <div class="voucher-discount">₹500</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>₹500 OFF on Myntra</h3>
+                        <p>Valid on a minimum purchase of ₹2499.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 200 Points</span>
+                            <span class="voucher-expiry">⏰ 60 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+
+                <div class="voucher-card entertainment-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/movie-projector.png" alt="Movies">
+                        </div>
+                        <div class="voucher-brand">BookMyShow</div>
+                        <div class="voucher-discount">Buy 1 Get 1</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>Buy 1 Get 1 Movie Ticket Free</h3>
+                        <p>Applicable on select cinemas on Fridays.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 300 Points</span>
+                            <span class="voucher-expiry">⏰ 15 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+
+                <div class="voucher-card travel-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/airplane-mode-on.png" alt="Travel">
+                        </div>
+                        <div class="voucher-brand">MakeMyTrip</div>
+                        <div class="voucher-discount">₹1000</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>Flat ₹1000 OFF on Flights</h3>
+                        <p>Get instant discount on domestic flight bookings.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 400 Points</span>
+                            <span class="voucher-expiry">⏰ 45 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+
+                <div class="voucher-card food-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/coffee-to-go.png" alt="Coffee">
+                        </div>
+                        <div class="voucher-brand">Starbucks</div>
+                        <div class="voucher-discount">25% OFF</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>25% OFF on Starbucks</h3>
+                        <p>Valid on all beverages and food items.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 100 Points</span>
+                            <span class="voucher-expiry">⏰ 30 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+
+                <div class="voucher-card shopping-category">
+                    <div class="voucher-header">
+                        <div class="voucher-logo">
+                            <img src="https://img.icons8.com/fluency/48/amazon.png" alt="Amazon">
+                        </div>
+                        <div class="voucher-brand">Amazon</div>
+                        <div class="voucher-discount">₹200</div>
+                    </div>
+                    <div class="voucher-details">
+                        <h3>₹200 OFF on Amazon</h3>
+                        <p>Valid on electronics and home appliances.</p>
+                        <div class="voucher-meta">
+                            <span class="points-required">🏆 180 Points</span>
+                            <span class="voucher-expiry">⏰ 90 days</span>
+                        </div>
+                    </div>
+                    <button class="voucher-action-btn">Redeem</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Earn More Section -->
+        <section class="earn-more-section">
+            <div class="earn-more-header">
+                <h2>💡 Earn More Rewards</h2>
+                <p>Complete these activities to boost your rewards</p>
+            </div>
+            <div class="earn-activities">
+                <div class="activity-card">
+                    <div class="activity-icon">📱</div>
+                    <div class="activity-content">
+                        <h3>Make 5 Mobile Recharges</h3>
+                        <p>Earn 50 bonus points</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">3/5 completed</span>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">🎬</div>
+                    <div class="activity-content">
+                        <h3>Book 2 Movie Tickets</h3>
+                        <p>Earn 100 bonus points</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                        <span class="progress-text">1/2 completed</span>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">✈️</div>
+                    <div class="activity-content">
+                        <h3>Book 1 Flight</h3>
+                        <p>Earn 200 bonus points</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0/1 completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                        <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                        <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="./flights.html">Flight Tickets</a></li>
+                        <li><a href="./movies.html">Movie Tickets</a></li>
+                        <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

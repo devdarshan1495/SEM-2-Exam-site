@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet & Saved Cards - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="logged-in">
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="container page-container">
+        <div class="profile-page-layout">
+            <!-- Left Side: Navigation -->
+            <aside class="profile-nav-container">
+                <div class="profile-user-card">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <h3>John Doe</h3>
+                    <p>john.doe@example.com</p>
+                </div>
+                <ul class="profile-nav-list">
+                    <li><a href="./profile.html">My Profile</a></li>
+                    <li><a href="./order-history.html">My Orders</a></li>
+                    <li class="active"><a href="./wallet.html">Wallet & Saved Cards</a></li>
+                    <li><a href="./settings.html">Settings</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </aside>
+
+            <!-- Right Side: Content -->
+            <section class="profile-content-container">
+                <div class="wallet-header">
+                    <h1>Wallet & Saved Cards</h1>
+                    <p>Manage your wallet balance and payment methods</p>
+                </div>
+
+                <!-- Wallet Balance Section -->
+                <div class="wallet-balance-card">
+                    <div class="wallet-balance-content">
+                        <div class="wallet-balance-info">
+                            <h3>PayTM Wallet Balance</h3>
+                            <div class="balance-amount" id="balance-amount">₹ 2,500.50</div>
+                            <p class="balance-subtitle">Available Balance</p>
+                            <div class="balance-actions-mini">
+                                <button class="mini-action-btn" onclick="refreshBalance()">🔄 Refresh</button>
+                                <button class="mini-action-btn" onclick="hideBalance()">👁️ Hide</button>
+                            </div>
+                        </div>
+                        <div class="wallet-actions">
+                            <button class="btn btn-primary wallet-btn" onclick="showAddMoneyDialog()">
+                                <span class="btn-icon">💰</span>
+                                Add Money
+                            </button>
+                            <button class="btn btn-secondary wallet-btn" onclick="showSendMoneyDialog()">
+                                <span class="btn-icon">📤</span>
+                                Send Money
+                            </button>
+                        </div>
+                    </div>
+                    <div class="wallet-card-visual">
+                        <div class="wallet-card-design">
+                            <div class="card-chip"></div>
+                            <div class="card-balance">₹2,500.50</div>
+                            <div class="card-number">**** **** **** 8901</div>
+                            <div class="card-holder">JOHN DOE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions-section">
+                    <h3>Quick Actions</h3>
+                    <div class="quick-actions-grid">
+                        <div class="quick-action-item" onclick="showAutoAddDialog()">
+                            <div class="action-icon">🔄</div>
+                            <span>Auto Add Money</span>
+                        </div>
+                        <div class="quick-action-item" onclick="showTransactionHistory()">
+                            <div class="action-icon">📊</div>
+                            <span>Transaction History</span>
+                        </div>
+                        <div class="quick-action-item" onclick="showCashbackOffers()">
+                            <div class="action-icon">🎁</div>
+                            <span>Cashback Offers</span>
+                        </div>
+                        <div class="quick-action-item" onclick="showWalletSettings()">
+                            <div class="action-icon">⚙️</div>
+                            <span>Wallet Settings</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Saved Cards Section -->
+                <div class="saved-cards-container">
+                    <div class="section-header">
+                        <h2>Saved Payment Methods</h2>
+                        <button class="btn btn-outline add-payment-btn" onclick="showAddPaymentDialog()">+ Add Payment Method</button>
+                    </div>
+                    
+                    <div class="saved-cards-grid">
+                        <div class="saved-card visa-card">
+                            <div class="card-header">
+                                <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" class="card-logo">
+                                <div class="card-menu">⋮</div>
+                            </div>
+                            <div class="card-number">•••• •••• •••• 1234</div>
+                            <div class="card-details">
+                                <div class="card-holder">JOHN DOE</div>
+                                <div class="card-expiry">12/28</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-type">Debit Card</span>
+                                <span class="card-bank">HDFC Bank</span>
+                            </div>
+                        </div>
+
+                        <div class="saved-card mastercard-card">
+                            <div class="card-header">
+                                <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard" class="card-logo">
+                                <div class="card-menu">⋮</div>
+                            </div>
+                            <div class="card-number">•••• •••• •••• 5678</div>
+                            <div class="card-details">
+                                <div class="card-holder">JOHN DOE</div>
+                                <div class="card-expiry">08/26</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-type">Credit Card</span>
+                                <span class="card-bank">ICICI Bank</span>
+                            </div>
+                        </div>
+
+                        <div class="saved-card upi-card">
+                            <div class="card-header">
+                                <img src="https://img.icons8.com/color/48/bhim-upi.png" alt="UPI" class="card-logo">
+                                <div class="card-menu">⋮</div>
+                            </div>
+                            <div class="card-number">john.doe@paytm</div>
+                            <div class="card-details">
+                                <div class="card-holder">UPI ID</div>
+                                <div class="card-expiry">Active</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-type">UPI Payment</span>
+                                <span class="card-bank">Primary</span>
+                            </div>
+                        </div>
+
+                        <div class="add-card-container">
+                            <div class="add-card-btn" onclick="showAddPaymentDialog()">
+                                <div class="add-icon">+</div>
+                                <div class="add-text">
+                                    <h4>Add New Card</h4>
+                                    <p>Credit, Debit or UPI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="recent-transactions">
+                    <h3>Recent Transactions</h3>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">📱</div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Mobile Recharge</div>
+                                <div class="transaction-subtitle">Airtel - 9876543210</div>
+                                <div class="transaction-time">Today, 2:30 PM</div>
+                            </div>
+                            <div class="transaction-amount debit">-₹299</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">💰</div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Money Added</div>
+                                <div class="transaction-subtitle">HDFC Bank ****1234</div>
+                                <div class="transaction-time">Yesterday, 6:45 PM</div>
+                            </div>
+                            <div class="transaction-amount credit">+₹1,000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">🎬</div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Movie Tickets</div>
+                                <div class="transaction-subtitle">PVR Cinemas - 2 Tickets</div>
+                                <div class="transaction-time">Dec 13, 8:15 PM</div>
+                            </div>
+                            <div class="transaction-amount debit">-₹540</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-ghost view-all-btn">View All Transactions</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                        <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                        <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="./flights.html">Flight Tickets</a></li>
+                        <li><a href="./movies.html">Movie Tickets</a></li>
+                        <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script>
+        // Wallet specific functionality
+        let balanceVisible = true;
+        
+        function showAddMoneyDialog() {
+            const amount = prompt('Enter amount to add (₹):');
+            if (amount && !isNaN(amount) && amount > 0) {
+                alert(`₹${amount} will be added to your wallet. Redirecting to payment...`);
+            }
+        }
+        
+        function showSendMoneyDialog() {
+            const phone = prompt('Enter mobile number or UPI ID:');
+            if (phone) {
+                const amount = prompt('Enter amount to send (₹):');
+                if (amount && !isNaN(amount) && amount > 0) {
+                    alert(`₹${amount} will be sent to ${phone}. Confirming transaction...`);
+                }
+            }
+        }
+        
+        function showAddPaymentDialog() {
+            const method = prompt('Choose payment method:\n1. Credit Card\n2. Debit Card\n3. UPI\n\nEnter your choice (1-3):');
+            if (method && ['1','2','3'].includes(method)) {
+                alert('Payment method addition form would open here.');
+            }
+        }
+        
+        function refreshBalance() {
+            document.getElementById('balance-amount').style.opacity = '0.5';
+            setTimeout(() => {
+                document.getElementById('balance-amount').style.opacity = '1';
+                alert('Balance refreshed!');
+            }, 1000);
+        }
+        
+        function hideBalance() {
+            const balanceEl = document.getElementById('balance-amount');
+            if (balanceVisible) {
+                balanceEl.textContent = '₹ ••••••';
+                balanceVisible = false;
+            } else {
+                balanceEl.textContent = '₹ 2,500.50';
+                balanceVisible = true;
+            }
+        }
+        
+        function showAutoAddDialog() {
+            alert('Auto Add Money settings would open here. Set up automatic wallet top-ups.');
+        }
+        
+        function showTransactionHistory() {
+            alert('Full transaction history would open here. View all your past transactions.');
+        }
+        
+        function showCashbackOffers() {
+            alert('Cashback offers would be displayed here. Discover ways to earn rewards.');
+        }
+        
+        function showWalletSettings() {
+            alert('Wallet settings would open here. Manage security, limits, and preferences.');
+        }
+        
+        // Add interactive card menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardMenus = document.querySelectorAll('.card-menu');
+            cardMenus.forEach(menu => {
+                menu.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    alert('Card options: Edit, Delete, Set as Primary');
+                });
+            });
+            
+            // Add click functionality to transaction items
+            const transactionItems = document.querySelectorAll('.transaction-item');
+            transactionItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    alert('Transaction details would open here.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

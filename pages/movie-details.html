@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandu Champion - Movie Details - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="page-container">
+        <!-- Movie Details Hero Section -->
+        <section class="movie-details-hero" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://i.ibb.co/bFDDv7m/movie-poster-1.png');">
+            <div class="container movie-details-container">
+                <div class="movie-poster-container">
+                    <img src="https://i.ibb.co/bFDDv7m/movie-poster-1.png" alt="Chandu Champion Poster">
+                </div>
+                <div class="movie-meta-container">
+                    <h1>Chandu Champion</h1>
+                    <div class="movie-rating">
+                        <img src="https://img.icons8.com/fluency/48/star.png" alt="Star"/>
+                        <span>8.6/10 (IMDb)</span>
+                    </div>
+                    <div class="movie-tags">
+                        <span>2D</span>
+                        <span>Hindi</span>
+                    </div>
+                    <p class="movie-specs">2h 23m • Drama, Sport • UA • 14 Jun, 2024</p>
+                    <a href="./seat-selection.html" class="btn btn-primary btn-book-tickets">Book Tickets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Cast Section -->
+        <section class="container movie-content-section">
+            <div class="about-movie">
+                <h2>About the Movie</h2>
+                <p>
+                    An unbelievable tale of a man who faced one adversary after another with an undying spirit. His unwavering zeal and never-give-up attitude led to India's first individual gold medal in any form of the Olympics.
+                </p>
+            </div>
+
+            <div class="cast-crew">
+                <h2>Cast & Crew</h2>
+                <div class="cast-grid">
+                    <div class="cast-card">
+                        <img src="https://i.ibb.co/d7z1y1g/actor-1.png" alt="Kartik Aaryan">
+                        <h3>Kartik Aaryan</h3>
+                        <p>as Murlikant Petkar</p>
+                    </div>
+                    <div class="cast-card">
+                        <img src="https://i.ibb.co/gR77P7k/actor-2.png" alt="Kabir Khan">
+                        <h3>Kabir Khan</h3>
+                        <p>Director</p>
+                    </div>
+                    <div class="cast-card">
+                        <img src="https://i.ibb.co/8b7dJ5v/actor-3.png" alt="Vijay Raaz">
+                        <h3>Vijay Raaz</h3>
+                        <p>as Coach</p>
+                    </div>
+                     <div class="cast-card">
+                        <img src="https://i.ibb.co/8b4tD8h/actor-4.png" alt="Pritam">
+                        <h3>Pritam</h3>
+                        <p>Music</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="#">Mobile Recharge</a></li>
+                        <li><a href="#">DTH Recharge</a></li>
+                        <li><a href="#">Electricity Bill</a></li>
+                        <li><a href="#">Credit Card Bill</a></li>
+                        <li><a href="#">Pay Loan EMI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Movie Tickets</a></li>
+                        <li><a href="#">Bus Tickets</a></li>
+                        <li><a href="#">Train Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Grievance Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

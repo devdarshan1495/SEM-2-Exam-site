@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="container page-container">
+        <!-- Hero Section -->
+        <section class="investments-hero">
+            <div class="investments-hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🏆</span>
+                        <span>India's #1 Investment Platform</span>
+                    </div>
+                    <h1>📈 Start Your Investment Journey</h1>
+                    <p>Grow your wealth with smart investment options. From stocks to mutual funds, make your money work harder for you with expert guidance and cutting-edge technology.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary hero-btn">Start Investing Now</button>
+                        <button class="btn btn-outline hero-btn-secondary">Learn More</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10L+</span>
+                            <span class="stat-label">Active Investors</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">₹500Cr+</span>
+                            <span class="stat-label">Total Invested</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15%+</span>
+                            <span class="stat-label">Avg Returns</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.8★</span>
+                            <span class="stat-label">User Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="investment-dashboard">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <span class="card-title">Portfolio Performance</span>
+                                <span class="performance-indicator positive">+24.5%</span>
+                            </div>
+                            <div class="growth-chart">
+                                <div class="chart-bar bar-1"></div>
+                                <div class="chart-bar bar-2"></div>
+                                <div class="chart-bar bar-3"></div>
+                                <div class="chart-bar bar-4"></div>
+                                <div class="chart-bar bar-5"></div>
+                                <div class="chart-bar bar-6"></div>
+                                <div class="chart-bar bar-7"></div>
+                                <div class="growth-arrow">📈</div>
+                            </div>
+                            <div class="chart-value">₹1,24,500</div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element stocks">📊 Stocks</div>
+                            <div class="floating-element gold">🏆 Gold</div>
+                            <div class="floating-element crypto">₿ Crypto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Overview -->
+        <section class="portfolio-overview">
+            <div class="portfolio-header">
+                <div class="header-content">
+                    <h2>💼 Your Investment Portfolio</h2>
+                    <p>Track your investments and monitor performance in real-time</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-outline portfolio-btn">View Details</button>
+                    <button class="add-investment-btn">+ Add Investment</button>
+                </div>
+            </div>
+            <div class="portfolio-stats">
+                <div class="portfolio-card main-balance">
+                    <div class="card-decoration"></div>
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Total Portfolio Value</h3>
+                            <span class="growth-indicator positive">+12.5% today</span>
+                        </div>
+                        <div class="portfolio-trend">
+                            <div class="trend-chart">
+                                <div class="trend-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="balance-amount">₹ 1,25,430</div>
+                    <div class="balance-change">+₹13,850 today</div>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn">Add Money</button>
+                        <button class="quick-action-btn">Withdraw</button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-icon invested">📊</div>
+                    <div class="card-content">
+                        <h4>Total Invested</h4>
+                        <span class="amount">₹ 95,000</span>
+                        <span class="sub-info">Across 12 investments</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-icon returns">💰</div>
+                    <div class="card-content">
+                        <h4>Total Returns</h4>
+                        <span class="amount positive">₹ 30,430</span>
+                        <span class="sub-info">+32% overall</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-icon gains">📈</div>
+                    <div class="card-content">
+                        <h4>Day's Gain</h4>
+                        <span class="amount positive">₹ 2,850</span>
+                        <span class="sub-info">+2.3% today</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top Holdings -->
+            <div class="top-holdings">
+                <h3>🏆 Top Holdings</h3>
+                <div class="holdings-grid">
+                    <div class="holding-item">
+                        <div class="holding-icon">🔵</div>
+                        <div class="holding-info">
+                            <span class="holding-name">Reliance Industries</span>
+                            <span class="holding-type">Equity</span>
+                        </div>
+                        <div class="holding-value">
+                            <span class="value">₹25,400</span>
+                            <span class="change positive">+5.2%</span>
+                        </div>
+                    </div>
+                    <div class="holding-item">
+                        <div class="holding-icon">🟡</div>
+                        <div class="holding-info">
+                            <span class="holding-name">SBI Bluechip Fund</span>
+                            <span class="holding-type">Mutual Fund</span>
+                        </div>
+                        <div class="holding-value">
+                            <span class="value">₹18,200</span>
+                            <span class="change positive">+3.8%</span>
+                        </div>
+                    </div>
+                    <div class="holding-item">
+                        <div class="holding-icon">🟠</div>
+                        <div class="holding-info">
+                            <span class="holding-name">Digital Gold</span>
+                            <span class="holding-type">Commodity</span>
+                        </div>
+                        <div class="holding-value">
+                            <span class="value">₹12,500</span>
+                            <span class="change negative">-1.2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Options -->
+        <section class="investment-options">
+            <div class="section-header">
+                <h2>🚀 Investment Opportunities</h2>
+                <p>Explore different ways to grow your wealth</p>
+            </div>
+            <div class="investment-grid">
+                <div class="investment-card featured">
+                    <div class="card-badge">TRENDING</div>
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/stocks.png" alt="Stocks">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Stocks & Equity</h3>
+                        <p>Invest directly in shares of your favorite companies</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ Zero Brokerage</span>
+                            <span class="feature">✓ Real-time Trading</span>
+                            <span class="feature">✓ Expert Recommendations</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Potential Returns:</span>
+                            <span class="return-value">12-18% p.a.</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Start Trading</button>
+                </div>
+
+                <div class="investment-card">
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/initiate-money-transfer.png" alt="Mutual Funds">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Mutual Funds</h3>
+                        <p>Diversify your portfolio with professionally managed funds</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ SIP from ₹100</span>
+                            <span class="feature">✓ Tax Saving Options</span>
+                            <span class="feature">✓ Expert Fund Selection</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Potential Returns:</span>
+                            <span class="return-value">10-15% p.a.</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Explore Funds</button>
+                </div>
+
+                <div class="investment-card">
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/gold-bars.png" alt="Digital Gold">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Digital Gold</h3>
+                        <p>Buy, sell, and store 24K pure gold digitally</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ Start from ₹1</span>
+                            <span class="feature">✓ 99.9% Pure Gold</span>
+                            <span class="feature">✓ Instant Liquidity</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Current Rate:</span>
+                            <span class="return-value">₹6,450/gram</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Buy Gold</button>
+                </div>
+
+                <div class="investment-card">
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/bitcoin.png" alt="Cryptocurrency">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Cryptocurrency</h3>
+                        <p>Invest in the future of digital currency</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ Multiple Coins</span>
+                            <span class="feature">✓ Secure Trading</span>
+                            <span class="feature">✓ Real-time Prices</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Bitcoin Price:</span>
+                            <span class="return-value">₹42,50,000</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Trade Crypto</button>
+                </div>
+
+                <div class="investment-card">
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/bank.png" alt="Fixed Deposits">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Fixed Deposits</h3>
+                        <p>Safe and guaranteed returns on your investments</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ Guaranteed Returns</span>
+                            <span class="feature">✓ Flexible Tenure</span>
+                            <span class="feature">✓ DICGC Insured</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Interest Rate:</span>
+                            <span class="return-value">6.5-7.5% p.a.</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Book FD</button>
+                </div>
+
+                <div class="investment-card">
+                    <div class="investment-icon">
+                        <img src="https://img.icons8.com/fluency/96/government.png" alt="Government Bonds">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Government Bonds</h3>
+                        <p>Low-risk investment backed by government guarantee</p>
+                        <div class="investment-features">
+                            <span class="feature">✓ Government Backed</span>
+                            <span class="feature">✓ Tax Benefits</span>
+                            <span class="feature">✓ Steady Returns</span>
+                        </div>
+                        <div class="return-info">
+                            <span class="return-label">Yield:</span>
+                            <span class="return-value">6.0-8.0% p.a.</span>
+                        </div>
+                    </div>
+                    <button class="investment-btn">Invest in Bonds</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIP Calculator -->
+        <section class="sip-calculator">
+            <div class="calculator-container">
+                <div class="calculator-header">
+                    <h3>🧮 SIP Calculator</h3>
+                    <p>Calculate your future wealth with systematic investment plans</p>
+                </div>
+                <div class="calculator-content">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label>Monthly Investment</label>
+                            <input type="range" id="monthlyAmount" min="500" max="50000" value="5000" class="range-slider">
+                            <span class="range-value">₹5,000</span>
+                        </div>
+                        <div class="input-group">
+                            <label>Investment Period</label>
+                            <input type="range" id="investmentPeriod" min="1" max="30" value="10" class="range-slider">
+                            <span class="range-value">10 years</span>
+                        </div>
+                        <div class="input-group">
+                            <label>Expected Return</label>
+                            <input type="range" id="expectedReturn" min="5" max="20" value="12" class="range-slider">
+                            <span class="range-value">12% p.a.</span>
+                        </div>
+                    </div>
+                    <div class="calculator-result">
+                        <div class="result-summary">
+                            <div class="result-item">
+                                <span class="result-label">Total Investment</span>
+                                <span class="result-value" id="totalInvestment">₹6,00,000</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Total Returns</span>
+                                <span class="result-value" id="totalReturns">₹5,46,227</span>
+                            </div>
+                            <div class="result-item main-result">
+                                <span class="result-label">Maturity Amount</span>
+                                <span class="result-value" id="maturityAmount">₹11,46,227</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Updates -->
+        <section class="market-updates">
+            <div class="section-header">
+                <h2>📊 Market Updates</h2>
+                <p>Stay updated with the latest market trends</p>
+            </div>
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-index">
+                        <h4>NIFTY 50</h4>
+                        <span class="index-value">22,850.75</span>
+                        <span class="index-change positive">+145.30 (+0.64%)</span>
+                    </div>
+                </div>
+                <div class="market-card">
+                    <div class="market-index">
+                        <h4>SENSEX</h4>
+                        <span class="index-value">75,418.04</span>
+                        <span class="index-change positive">+356.24 (+0.48%)</span>
+                    </div>
+                </div>
+                <div class="market-card">
+                    <div class="market-index">
+                        <h4>GOLD</h4>
+                        <span class="index-value">₹64,500</span>
+                        <span class="index-change negative">-125 (-0.19%)</span>
+                    </div>
+                </div>
+                <div class="market-card">
+                    <div class="market-index">
+                        <h4>USD/INR</h4>
+                        <span class="index-value">82.45</span>
+                        <span class="index-change positive">+0.15 (+0.18%)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                        <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                        <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                        <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                        <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="./flights.html">Flight Tickets</a></li>
+                        <li><a href="./movies.html">Movie Tickets</a></li>
+                        <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                        <li><a href="#">Train Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Grievance Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

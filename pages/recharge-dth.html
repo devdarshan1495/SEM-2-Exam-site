@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTH Recharge - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./investments.html">Investments</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="container page-container">
+        <section class="content-section">
+            <div class="card form-card">
+                <h2>Recharge DTH</h2>
+                <p>Instant DTH recharge for all major providers.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="dth-id">Subscriber ID / Mobile Number</label>
+                        <input type="text" id="dth-id" placeholder="Enter your ID or number">
+                    </div>
+                    <div class="form-group">
+                        <label for="dth-amount">Amount</label>
+                        <input type="number" id="dth-amount" placeholder="Enter recharge amount">
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Proceed to Recharge</button>
+                </form>
+            </div>
+
+            <div class="operator-selection">
+                <h3>Select Your DTH Operator</h3>
+                <div class="operator-grid">
+                    <div class="operator-card">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/recharge/dth/1571227003847_tata-sky-logo.png" alt="Tata Play">
+                        <span>Tata Play</span>
+                    </div>
+                    <div class="operator-card">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/recharge/dth/1571227183617_airtel-logo.png" alt="Airtel Digital TV">
+                        <span>Airtel Digital TV</span>
+                    </div>
+                     <div class="operator-card">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/recharge/dth/1571227244923_dish-tv-logo.png" alt="Dish TV">
+                        <span>Dish TV</span>
+                    </div>
+                     <div class="operator-card">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/recharge/dth/1571227293149_d2h-logo.png" alt="d2h">
+                        <span>d2h</span>
+                    </div>
+                     <div class="operator-card">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/recharge/dth/1571227361424_sun-direct-logo.png" alt="Sun Direct">
+                        <span>Sun Direct</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="#">Mobile Recharge</a></li>
+                        <li><a href="#">DTH Recharge</a></li>
+                        <li><a href="#">Electricity Bill</a></li>
+                        <li><a href="#">Credit Card Bill</a></li>
+                        <li><a href="#">Pay Loan EMI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Movie Tickets</a></li>
+                        <li><a href="#">Bus Tickets</a></li>
+                        <li><a href="#">Train Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Grievance Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

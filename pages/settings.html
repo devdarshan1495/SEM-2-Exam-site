@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - PayTM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="logged-in">
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">PayTM Clone</a>
+            <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Recharge & Bills</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                            <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                            <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                            <li><a href="./bill-credit-card.html">Credit Card Bill</a></li>
+                            <li><a href="./pay-loan-emi.html">Pay Loan EMI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Bookings</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./flights.html">Flights</a></li>
+                            <li><a href="./movies.html">Movie Tickets</a></li>
+                            <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                            <li><a href="#">Train Tickets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./wallet.html">Wallet</a></li>
+                <li class="nav-item"><a href="./rewards.html">Rewards</a></li>
+                <li class="nav-item"><a href="./insurance.html">Insurance</a></li>
+                <li class="nav-item"><a href="./investments.html">Investments</a></li>
+            </ul>
+            <div class="navbar-user-section">
+                <a href="./signin.html" class="btn-signin">Sign In</a>
+                <a href="./profile.html" class="profile-icon">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <span>John</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+        </div>
+        <ul>
+            <li><a href="./recharge-mobile.html">Recharge & Bills</a></li>
+            <li><a href="./flights.html">Bookings</a></li>
+            <li><a href="./wallet.html">Wallet</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+            <li><a href="./order-history.html">My Orders</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="./profile.html" class="btn btn-secondary full-width">My Profile</a>
+        </div>
+    </div>
+
+    <main class="container page-container">
+        <div class="profile-page-layout">
+            <!-- Left Side: Navigation -->
+            <aside class="profile-nav-container">
+                <div class="profile-user-card">
+                    <img src="https://i.ibb.co/6Hcf9G3/user-avatar.png" alt="User Avatar">
+                    <h3>John Doe</h3>
+                    <p>john.doe@example.com</p>
+                </div>
+                <ul class="profile-nav-list">
+                    <li><a href="./profile.html">My Profile</a></li>
+                    <li><a href="./order-history.html">My Orders</a></li>
+                    <li><a href="./wallet.html">Wallet & Saved Cards</a></li>
+                    <li class="active"><a href="./settings.html">Settings</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </aside>
+
+            <!-- Right Side: Content -->
+            <section class="profile-content-container">
+                <div class="settings-page-container">
+                    <div class="settings-header">
+                        <h1>Settings</h1>
+                        <p>Manage your account preferences and security settings</p>
+                    </div>
+
+                    <div class="settings-grid">
+                        <!-- Account Settings -->
+                        <div class="settings-section">
+                            <div class="settings-section-header">
+                                <div class="icon">👤</div>
+                                <h3>Account Settings</h3>
+                            </div>
+                            <div class="settings-section-content">
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Email Notifications</h4>
+                                        <p>Receive updates about your transactions and offers</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>SMS Notifications</h4>
+                                        <p>Get SMS alerts for important activities</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Marketing Communications</h4>
+                                        <p>Receive promotional offers and updates</p>
+                                    </div>
+                                    <button class="toggle-switch" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Language</h4>
+                                        <p>Choose your preferred language</p>
+                                    </div>
+                                    <select class="settings-select">
+                                        <option>English</option>
+                                        <option>Hindi</option>
+                                        <option>Tamil</option>
+                                        <option>Bengali</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Settings -->
+                        <div class="settings-section">
+                            <div class="settings-section-header">
+                                <div class="icon">🔒</div>
+                                <h3>Security & Privacy</h3>
+                            </div>
+                            <div class="settings-section-content">
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Two-Factor Authentication</h4>
+                                        <p>Add an extra layer of security to your account</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Biometric Login</h4>
+                                        <p>Use fingerprint or face ID for quick access</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Login Alerts</h4>
+                                        <p>Get notified when someone logs into your account</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Auto Logout</h4>
+                                        <p>Automatically log out after inactivity</p>
+                                    </div>
+                                    <select class="settings-select">
+                                        <option>15 minutes</option>
+                                        <option>30 minutes</option>
+                                        <option>1 hour</option>
+                                        <option>Never</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Settings -->
+                        <div class="settings-section">
+                            <div class="settings-section-header">
+                                <div class="icon">💳</div>
+                                <h3>Payment Preferences</h3>
+                            </div>
+                            <div class="settings-section-content">
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Auto Add Money</h4>
+                                        <p>Automatically add money when balance is low</p>
+                                    </div>
+                                    <button class="toggle-switch" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Transaction Limits</h4>
+                                        <p>Set daily transaction limits for security</p>
+                                    </div>
+                                    <select class="settings-select">
+                                        <option>₹10,000</option>
+                                        <option>₹25,000</option>
+                                        <option>₹50,000</option>
+                                        <option>₹1,00,000</option>
+                                    </select>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Payment Confirmation</h4>
+                                        <p>Require confirmation for payments above threshold</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Default Payment Method</h4>
+                                        <p>Choose your preferred payment method</p>
+                                    </div>
+                                    <select class="settings-select">
+                                        <option>PayTM Wallet</option>
+                                        <option>UPI</option>
+                                        <option>Credit Card</option>
+                                        <option>Debit Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- App Settings -->
+                        <div class="settings-section">
+                            <div class="settings-section-header">
+                                <div class="icon">⚙️</div>
+                                <h3>App Preferences</h3>
+                            </div>
+                            <div class="settings-section-content">
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Dark Mode</h4>
+                                        <p>Switch to dark theme for better viewing</p>
+                                    </div>
+                                    <button class="toggle-switch" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Sound Effects</h4>
+                                        <p>Play sounds for successful transactions</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Haptic Feedback</h4>
+                                        <p>Feel vibrations for touch interactions</p>
+                                    </div>
+                                    <button class="toggle-switch active" onclick="toggleSetting(this)"></button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>App Lock</h4>
+                                        <p>Require authentication to open the app</p>
+                                    </div>
+                                    <button class="toggle-switch" onclick="toggleSetting(this)"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Danger Zone -->
+                    <div class="danger-zone">
+                        <h3>⚠️ Danger Zone</h3>
+                        <p>These actions cannot be undone. Please proceed with caution.</p>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-danger" onclick="confirmAction('deactivate')">Deactivate Account</button>
+                            <button class="btn-danger" onclick="confirmAction('delete')">Delete Account</button>
+                            <button class="btn-danger" onclick="confirmAction('reset')">Reset All Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-column">
+                    <h4>Recharge & Pay Bills</h4>
+                    <ul>
+                        <li><a href="./recharge-mobile.html">Mobile Recharge</a></li>
+                        <li><a href="./recharge-dth.html">DTH Recharge</a></li>
+                        <li><a href="./bill-electricity.html">Electricity Bill</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Book Tickets</h4>
+                    <ul>
+                        <li><a href="./flights.html">Flight Tickets</a></li>
+                        <li><a href="./movies.html">Movie Tickets</a></li>
+                        <li><a href="./bus-tickets.html">Bus Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PayTM Clone. All Rights Reserved. This is a clone for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script>
+        // Settings page functionality
+        function toggleSetting(button) {
+            button.classList.toggle('active');
+            
+            // Haptic feedback simulation
+            if (navigator.vibrate) {
+                navigator.vibrate(50);
+            }
+            
+            // Optional: Save setting to localStorage
+            const settingName = button.closest('.setting-item').querySelector('h4').textContent;
+            const isActive = button.classList.contains('active');
+            localStorage.setItem(settingName, isActive);
+            
+            // Show confirmation
+            showToast(`${settingName} ${isActive ? 'enabled' : 'disabled'}`);
+        }
+        
+        function confirmAction(action) {
+            let message = '';
+            switch(action) {
+                case 'deactivate':
+                    message = 'Are you sure you want to deactivate your account? You can reactivate it later by logging in.';
+                    break;
+                case 'delete':
+                    message = 'Are you sure you want to permanently delete your account? This action cannot be undone and all your data will be lost.';
+                    break;
+                case 'reset':
+                    message = 'Are you sure you want to reset all settings to default? Your preferences will be lost.';
+                    break;
+            }
+            
+            if (confirm(message)) {
+                alert(`${action} action would be processed here. This is a demo.`);
+            }
+        }
+        
+        function showToast(message) {
+            // Create toast notification
+            const toast = document.createElement('div');
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: linear-gradient(135deg, var(--primary-color), #0088cc);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 185, 245, 0.3);
+                z-index: 9999;
+                font-weight: 600;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            
+            document.body.appendChild(toast);
+            
+            // Animate in
+            setTimeout(() => {
+                toast.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 3000);
+        }
+        
+        // Load saved settings on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggles = document.querySelectorAll('.toggle-switch');
+            toggles.forEach(toggle => {
+                const settingName = toggle.closest('.setting-item').querySelector('h4').textContent;
+                const saved = localStorage.getItem(settingName);
+                if (saved !== null) {
+                    if (saved === 'true') {
+                        toggle.classList.add('active');
+                    } else {
+                        toggle.classList.remove('active');
+                    }
+                }
+            });
+        });
+        
+        // Add click handlers for dropdown changes
+        document.querySelectorAll('.settings-select').forEach(select => {
+            select.addEventListener('change', function() {
+                const settingName = this.closest('.setting-item').querySelector('h4').textContent;
+                showToast(`${settingName} updated to: ${this.value}`);
+            });
+        });
+    </script>
+</body>
+</html>
